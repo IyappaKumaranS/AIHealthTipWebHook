@@ -4,7 +4,7 @@ import os
 
 app = Flask(__name__)
 
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 COPSTAR_PROMPT = """
 You are a professional Medicare-style health assistant. Your response must always be clean, neutral, and clinically supportive.
